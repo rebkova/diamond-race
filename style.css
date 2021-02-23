@@ -1,0 +1,20 @@
+.header {
+  text-align: center;
+}
+
+.game {
+  display: flex;
+}
+
+.race-track {
+  min-width: 600px;
+  height: 400px;
+  flex-grow: 2;
+  border: 1px solid red;
+}
+
+.score-board {
+  min-width: 300px;
+  flex-grow: 0.5;
+  border: 1px solid blue;
+}
