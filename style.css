@@ -10,7 +10,36 @@
   min-width: 600px;
   height: 400px;
   flex-grow: 2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid red;
+}
+
+/*------ BUTTONS -------*/
+
+.race-track__button {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  transform: rotate(45deg);
+  margin-bottom: 25px;
+}
+
+.race-track__button--blue {
+  background-color: blue;
+}
+
+.race-track__button--green {
+  background-color: green;
+}
+
+.race-track__button--red {
+  background-color: red;
+}
+
+.race-track__button--yellow {
+  background-color: yellow;
 }
 
 .score-board {
