@@ -10,7 +10,8 @@
   min-width: 600px;
   height: 400px;
   flex-grow: 2;
-  padding: 10px;
+  padding: 10px 0;
+  margin-left: 40px;
   display: flex;
   flex-direction: column;
   border: 1px solid red;
@@ -24,6 +25,7 @@
   border: 1px solid black;
   transform: rotate(45deg);
   margin-bottom: 25px;
+  margin-left: -17px;
 }
 
 .race-track__button--blue {
@@ -42,8 +44,43 @@
   background-color: yellow;
 }
 
+/*------ SCORE BOARD ------*/
+
 .score-board {
   min-width: 300px;
   flex-grow: 0.5;
   border: 1px solid blue;
+}
+
+.score-board__list {
+  border: 1px solid orange;
+}
+
+.score-board__list-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.score-board__list-item {
+  width: 80px;
+  height: 10px;
+  margin: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.score-board__list-item--blue {
+  background-color: blue;
+}
+
+.score-board__list-item--green {
+  background-color: green;
+}
+
+.score-board__list-item--red {
+  background-color: red;
+}
+
+.score-board__list-item--yellow {
+  background-color: yellow;
 }

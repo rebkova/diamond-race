@@ -1,20 +1,21 @@
-const diamondBlue = document.getElementById("race-track__button-1")
-const diamondGreen = document.getElementById("race-track__button-2")
-const diamondRed = document.getElementById("race-track__button-3")
-const diamondYellow = document.getElementById("race-track__button-4")
+const blueDiamond = document.getElementById("blueButton")
+const greenDiamond = document.getElementById("greenButton")
+const redDiamond = document.getElementById("redButton")
+const yellowDiamond = document.getElementById("yellowButton")
 
-diamondBlue.onclick = () => {
+blueDiamond.onclick = () => {
   console.log("Hej, you clicked the blue button!")
+  //
 }
 
-diamondGreen.onclick = () => {
+greenDiamond.onclick = () => {
   console.log("Hej, you clicked the green button!")
 }
 
-diamondRed.onclick = () => {
+redDiamond.onclick = () => {
   console.log("Hej, you clicked the red button!")
 }
 
-diamondYellow.onclick = () => {
+yellowDiamond.onclick = () => {
   console.log("Hej, you clicked the yellow button!")
 }
