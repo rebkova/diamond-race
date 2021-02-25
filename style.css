@@ -59,6 +59,7 @@
 .score-board__list-wrap {
   display: flex;
   align-items: center;
+  margin: 0 60px;
 }
 
 .score-board__list-item {
