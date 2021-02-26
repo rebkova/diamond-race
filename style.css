@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   text-align: center;
 }
@@ -6,15 +12,26 @@
   display: flex;
 }
 
+.race-track__wrap {
+  display: flex;
+  padding-top: 15px;
+  border: 1px solid orange;
+}
+
+.race-track__wrap>p {
+  margin: 0;
+  padding: 0 3px;
+}
+
 .race-track {
-  min-width: 600px;
-  height: 400px;
-  flex-grow: 2;
+  width: 600px;
+  height: 350px;
   padding: 10px 0;
-  margin-left: 40px;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  justify-content: center;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 /*------ BUTTONS -------*/
@@ -47,9 +64,19 @@
 /*------ SCORE BOARD ------*/
 
 .score-board {
-  min-width: 300px;
-  flex-grow: 0.5;
+  width: 300px;
+  padding-top: 15px;
   border: 1px solid blue;
+}
+
+.score-board__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.score-board__title {
+  text-align: center;
+  font-size: 19px;
 }
 
 .score-board__list {
@@ -59,7 +86,7 @@
 .score-board__list-wrap {
   display: flex;
   align-items: center;
-  margin: 0 60px;
+  justify-content: center;
 }
 
 .score-board__list-item {

@@ -1,9 +1,10 @@
 const redDiamond = document.getElementById("redButton")
 const redCounter = document.getElementById("redScore")
+const resetButtonRed = document.getElementById("resetButton")
 
 
 let nRed = 0
-const startPositionRed = -17
+let startPositionRed = -17
 const endPositionRed = 583
 const moveToRightRed = (endPositionRed - startPositionRed) / 10
 console.log(`initial int: ${nRed}`)
@@ -24,4 +25,12 @@ redDiamond.onclick = () => {
   } else if (currentPositionRed === endPositionRed) {
     console.log(`Hej, I'm here`)
   }
+}
+
+resetButtonRed.onclick = () => {
+  console.log("You clicked on Reset button red")
+  startPositionRed = -17
+  nRed = 0
+  redDiamond.style.marginLeft = startPositionRed + "px"
+  redCounter.innerHTML = nRed
 }

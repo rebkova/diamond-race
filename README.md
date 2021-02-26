@@ -1,6 +1,6 @@
 # diamond-race
 
-A game with racing diamonds. Moving diamonds on the click and keeping score of each.
+A game with racing diamonds. :diamonds: Moving diamonds on the click and keeping score of each.
 
 
 ## :brain: Learning objectives

@@ -1,9 +1,10 @@
 const blueDiamond = document.getElementById("blueButton")
 const blueCounter = document.getElementById("blueScore")
+const resetButtonBlue = document.getElementById("resetButton")
 console.log(blueCounter)
 
 let n = 0
-const startPosition = -17
+let startPosition = -17
 const endPosition = 583
 const moveToRight = (endPosition - startPosition) / 10
 console.log(`initial int: ${n}`)
@@ -24,4 +25,12 @@ blueDiamond.onclick = () => {
   } else if (currentPosition === endPosition) {
     console.log(`Hej, I'm here`)
   }
+}
+
+resetButtonBlue.onclick = () => {
+  console.log("You clicked on Reset button blue")
+  startPosition = -17
+  n = 0
+  blueDiamond.style.marginLeft = startPosition + "px"
+  blueCounter.innerHTML = n
 }

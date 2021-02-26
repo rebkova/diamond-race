@@ -1,8 +1,9 @@
 const greenDiamond = document.getElementById("greenButton")
 const greenCounter = document.getElementById("greenScore")
+const resetButtonGreen = document.getElementById("resetButton")
 
 let nGreen = 0
-const startPositionGreen = -17
+let startPositionGreen = -17
 const endPositionGreen = 583
 const moveToRightGreen = (endPositionGreen - startPositionGreen) / 10
 console.log(`initial int: ${nGreen}`)
@@ -22,4 +23,12 @@ greenDiamond.onclick = () => {
   } else if (currentPositionGreen === endPositionGreen) {
     console.log(`Hej, I'm here`)
   }
+}
+
+resetButtonGreen.onclick = () => {
+  console.log("You clicked on Reset button green")
+  startPositionGreen = -17
+  nGreen = 0
+  greenDiamond.style.marginLeft = startPositionGreen + "px"
+  greenCounter.innerHTML = nGreen
 }

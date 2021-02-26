@@ -1,9 +1,10 @@
 const yellowDiamond = document.getElementById("yellowButton")
 const yellowCounter = document.getElementById("yellowScore")
+const resetButtonYellow = document.getElementById("resetButton")
 
 
 let nYellow = 0
-const startPositionYellow = -17
+let startPositionYellow = -17
 const endPositionYellow = 583
 const moveToRightYellow = (endPositionYellow - startPositionYellow) / 10
 console.log(`initial int: ${nYellow}`)
@@ -23,4 +24,12 @@ yellowDiamond.onclick = () => {
   } else if (currentPositionYellow === endPositionYellow) {
     console.log(`Hej, I'm here`)
   }
+}
+
+resetButtonYellow.onclick = () => {
+  console.log("You clicked on Reset button yellow")
+  startPositionYellow = -17
+  nYellow = 0
+  yellowDiamond.style.marginLeft = startPositionYellow + "px"
+  yellowCounter.innerHTML = nYellow
 }
