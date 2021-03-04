@@ -1,3 +1,4 @@
+
 const blueDiamond = document.getElementById("blueButton")
 const blueCounter = document.getElementById("blueScore")
 const resetButtonBlue = document.getElementById("resetButton")
