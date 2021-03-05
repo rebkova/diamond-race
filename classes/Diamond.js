@@ -30,5 +30,3 @@ class Diamond {
     this.n = 0
   }
 }
-
-// module.exports = { Diamond }

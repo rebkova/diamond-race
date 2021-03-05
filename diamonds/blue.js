@@ -2,8 +2,6 @@
 const blueButton = document.getElementById("blueButton")
 const blueCounter = document.getElementById("blueScore")
 
-
-// a new instance of a Diamond class, passing in a <div> element
 const blueDiamond = new Diamond(blueButton)
 
 blueButton.onclick = () => {
@@ -13,8 +11,6 @@ blueButton.onclick = () => {
   blueCounter.innerHTML = blueDiamond.n
 }
 
-// blueButton.style.marginLeft = blueDiamond.currentPosition + "px"
-console.log(blueDiamond.currentPosition)
 
 
 
