@@ -43,6 +43,7 @@ body {
   transform: rotate(45deg);
   margin-bottom: 25px;
   margin-left: -17px;
+  cursor: pointer;
 }
 
 .race-track__button--blue {

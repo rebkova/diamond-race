@@ -1,26 +1,10 @@
-//Factory Function
-// function createDiamond(color) {
-//   return {
-//     color,
-//     startPosition: -17,
-//     endPosition: 583,
-//     currentPosition: function () {
-//       console.log("current position function from class invoked")
-//     },
-//     restart: function () {
-
-//     }
-
-//   }
-// }
-
-// const bluDiamond = createDiamond("blue")
 
 //Costructor Function
 class Diamond {
 
   constructor(color) {
     console.log('this is:', this)
+
     this.color = color
     this.end = 583
     this.start = -17
@@ -32,19 +16,19 @@ class Diamond {
 
   click() {
 
-    if (this.start < this.end) {
-      this.n = n + 1
+    if (this.start < this.end && this.n < 10) {
+      this.n = this.n + 1
+      console.log(`the value of this.n: ${this.n}`)
       this.currentPosition = this.start + this.moveRight * this.n
+      console.log(`current position after click: ${this.currentPosition}`)
     }
 
   }
 
-  restart() {
+  reset() {
     this.currentPosition = this.start
     this.n = 0
   }
 }
 
-
-const grenDiamond = new Diamond("green")
-console.log(grenDiamond)
+// module.exports = { Diamond }
