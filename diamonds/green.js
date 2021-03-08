@@ -1,7 +1,7 @@
 const greenButton = document.getElementById("greenButton")
 const greenCounter = document.getElementById("greenScore")
 
-const greenDiamond = new Diamond(greenButton)
+const greenDiamond = new Diamond()
 
 greenButton.onclick = () => {
   greenDiamond.click()

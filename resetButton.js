@@ -1,27 +1,26 @@
 // const { Diamond } = require('./Diamond')
 
 const resetButton = document.getElementById("resetButton")
-const diamond = new Diamond()
-// const allDiamonds = document.getElementsByClassName("race-track__button")
-const allDiamonds = document.getElementById("blueButton")
+const reset = new Diamond()
+const allDiamonds = document.getElementsByClassName("race-track__button")
+console.log(`allDiamonds: ${allDiamonds}`)
+
+const scoreAllDiamonds = document.getElementsByTagName("span")
+
+
+// const allDiamonds = document.getElementById("blueButton")
+const blueScore = document.getElementById("blueScore")
 
 resetButton.onclick = () => {
   console.log("You clicked on Reset button blue")
-  diamond.reset()
-  // allDiamonds.style.marginLeft = diamond.start + "px"
+  reset.reset()
 
-  //apply all styles and reset score
+  for (i = 0; i < allDiamonds.length; i++) {
+    allDiamonds[i].style.marginLeft = reset.start + "px"
+  }
 
-  //   startPosition = -17
-  //   n = 0
-  // blueDiamond.style.marginLeft = startPosition + "px"
-  //   blueCounter.innerHTML = n
+  for (i = 0; i < scoreAllDiamonds.length; i++) {
+    scoreAllDiamonds[i].innerHTML = reset.n
+  }
+
 }
-
-// resetButtonBlue.onclick = () => {
-//   console.log("You clicked on Reset button blue")
-//   startPosition = -17
-//   n = 0
-//   blueDiamond.style.marginLeft = startPosition + "px"
-//   blueCounter.innerHTML = n
-// }

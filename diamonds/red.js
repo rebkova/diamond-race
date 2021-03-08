@@ -2,7 +2,7 @@
 const redButton = document.getElementById("redButton")
 const redCounter = document.getElementById("redScore")
 
-const redDiamond = new Diamond(redButton)
+const redDiamond = new Diamond()
 
 redButton.onclick = () => {
   redDiamond.click()

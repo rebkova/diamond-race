@@ -26,7 +26,10 @@ class Diamond {
   }
 
   reset() {
+    console.log("reset() function called")
     this.currentPosition = this.start
+    console.log(`Curr pos after reset: ${this.currentPosition}`)
     this.n = 0
+    console.log(`n after reset: ${this.n}`)
   }
 }

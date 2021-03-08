@@ -2,7 +2,7 @@
 const blueButton = document.getElementById("blueButton")
 const blueCounter = document.getElementById("blueScore")
 
-const blueDiamond = new Diamond(blueButton)
+const blueDiamond = new Diamond()
 
 blueButton.onclick = () => {
   blueDiamond.click()
