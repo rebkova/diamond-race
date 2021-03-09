@@ -2,15 +2,12 @@
 //Costructor Function
 class Diamond {
 
-  constructor(color) {
-    console.log('this is:', this)
+  constructor() {
 
-    this.color = color
     this.end = 583
     this.start = -17
     this.n = 0
     this.moveRight = (this.end - this.start) / 10
-    this.currentPosition = this.start
 
   }
 
@@ -18,18 +15,15 @@ class Diamond {
 
     if (this.start < this.end && this.n < 10) {
       this.n = this.n + 1
-      console.log(`the value of this.n: ${this.n}`)
       this.currentPosition = this.start + this.moveRight * this.n
-      console.log(`current position after click: ${this.currentPosition}`)
     }
 
   }
 
   reset() {
-    console.log("reset() function called")
+
     this.currentPosition = this.start
-    console.log(`Curr pos after reset: ${this.currentPosition}`)
     this.n = 0
-    console.log(`n after reset: ${this.n}`)
+
   }
 }

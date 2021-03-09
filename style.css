@@ -15,7 +15,7 @@ body {
 .race-track__wrap {
   display: flex;
   padding-top: 15px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 .race-track__wrap>p {
@@ -67,12 +67,13 @@ body {
 .score-board {
   width: 300px;
   padding-top: 15px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .score-board__button {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .score-board__title {
@@ -80,9 +81,11 @@ body {
   font-size: 19px;
 }
 
-.score-board__list {
+/* NEEDED? */
+
+/* .score-board__list {
   border: 1px solid orange;
-}
+} */
 
 .score-board__list-wrap {
   display: flex;
