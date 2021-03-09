@@ -14,14 +14,17 @@ A game with racing diamonds. :diamonds: Moving diamonds on the click and keeping
 - moved every diamond to their own .js file - every diamond keeps their own score
 - since too much code was repetitive, I've created a class Diamond
 - by creating new instances of a pre-defined class I decreased the amount of redundant code
-- made the onclick() function work on a singke diamond using class
+- made the onclick() function work on a singLe diamond using class
+- made the reset() method work on all diamonds
 
 ## :heavy_check_mark: Features
 - on click, every diamond moves to the right
 - score is being kept for each diamond
 
 ## :chart_with_upwards_trend: Future improvements
-
+- set (background)color as a property in the object itself
+- how to structure the files better
+- styling?
 
 ## :robot: Tech used 
 - plain JavaScript

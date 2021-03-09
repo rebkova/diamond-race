@@ -4,8 +4,6 @@ const blueButton = document.getElementById("blueButton")
 const blueCounter = document.getElementById("blueScore")
 
 
-
-
 blueButton.onclick = () => {
   blueDiamond.click()
   blueButton.style.marginLeft = blueDiamond.currentPosition + "px"
