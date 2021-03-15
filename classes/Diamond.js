@@ -11,7 +11,7 @@ class Diamond {
 
   }
 
-  click() {
+  move() {
 
     if (this.start < this.end && this.n < 10) {
       this.n = this.n + 1

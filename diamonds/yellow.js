@@ -4,7 +4,7 @@ const yellowCounter = document.getElementById("yellowScore")
 
 
 yellowButton.onclick = () => {
-  yellowDiamond.click()
+  yellowDiamond.move()
   yellowButton.style.marginLeft = yellowDiamond.currentPosition + "px"
   yellowCounter.innerHTML = yellowDiamond.n
 }

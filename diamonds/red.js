@@ -4,7 +4,7 @@ const redCounter = document.getElementById("redScore")
 
 
 redButton.onclick = () => {
-  redDiamond.click()
+  redDiamond.move()
   redButton.style.marginLeft = redDiamond.currentPosition + "px"
   redCounter.innerHTML = redDiamond.n
 }

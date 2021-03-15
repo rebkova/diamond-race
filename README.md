@@ -14,7 +14,7 @@ A game with racing diamonds. :diamonds: Moving diamonds on the click and keeping
 - moved every diamond to their own .js file - every diamond keeps their own score
 - since too much code was repetitive, I've created a class Diamond
 - by creating new instances of a pre-defined class I decreased the amount of redundant code
-- made the onclick() function work on a singLe diamond using class
+- made the move() method work on a single diamond using class
 - made the reset() method work on all diamonds
 
 ## :heavy_check_mark: Features
