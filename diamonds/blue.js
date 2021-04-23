@@ -7,5 +7,5 @@ const blueCounter = document.getElementById("blueScore")
 blueButton.onclick = () => {
   blueDiamond.move()
   blueButton.style.marginLeft = blueDiamond.currentPosition + "px"
-  blueCounter.innerHTML = blueDiamond.n
+  blueCounter.innerHTML = blueDiamond.count
 }

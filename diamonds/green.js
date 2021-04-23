@@ -6,5 +6,5 @@ const greenCounter = document.getElementById("greenScore")
 greenButton.onclick = () => {
   greenDiamond.move()
   greenButton.style.marginLeft = greenDiamond.currentPosition + "px"
-  greenCounter.innerHTML = greenDiamond.n
+  greenCounter.innerHTML = greenDiamond.count
 }

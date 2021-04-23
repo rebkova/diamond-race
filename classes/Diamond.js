@@ -6,16 +6,16 @@ class Diamond {
 
     this.end = 583
     this.start = -17
-    this.n = 0
+    this.count = 0
     this.moveRight = (this.end - this.start) / 10
 
   }
 
   move() {
 
-    if (this.start < this.end && this.n < 10) {
-      this.n = this.n + 1
-      this.currentPosition = this.start + this.moveRight * this.n
+    if (this.start < this.end && this.count < 10) {
+      this.count = this.count + 1
+      this.currentPosition = this.start + this.moveRight * this.count
     }
 
   }
@@ -23,7 +23,7 @@ class Diamond {
   reset() {
 
     this.currentPosition = this.start
-    this.n = 0
+    this.count = 0
 
   }
 }

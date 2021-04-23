@@ -6,5 +6,5 @@ const yellowCounter = document.getElementById("yellowScore")
 yellowButton.onclick = () => {
   yellowDiamond.move()
   yellowButton.style.marginLeft = yellowDiamond.currentPosition + "px"
-  yellowCounter.innerHTML = yellowDiamond.n
+  yellowCounter.innerHTML = yellowDiamond.count
 }

@@ -19,7 +19,7 @@ resetButton.onclick = () => {
   }
 
   for (i = 0; i < scoreAllDiamonds.length; i++) {
-    scoreAllDiamonds[i].innerHTML = diamonds[i].n
+    scoreAllDiamonds[i].innerHTML = diamonds[i].count
   }
 
 }
