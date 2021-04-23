@@ -1,6 +1,6 @@
 # diamond-race
 
-A game with racing diamonds. :diamonds: :dash: Moving diamonds on the click and tracking score of each.
+A game with racing diamonds. :diamonds::dash: Moving diamonds on the click and tracking score of each.
 
 ## :brain: Learning objectives
 - how to write classes in vanilla JavaScript
