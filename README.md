@@ -11,6 +11,11 @@ A game with racing diamonds. :diamonds::dash: Moving diamonds on the click and t
 - score is being kept for each diamond
 - reset button that resets the score of each diamond to 0 and returns them to the start position
 
+## :chart_with_upwards_trend: Future improvements
+- make a diamond a custom element
+- create a controller/app that would take config file how many diamonds and in what colours should be included (to avoid redundant js files)
+- break the code down into more modules
+
 ## :robot: Tech used 
 - plain JavaScript
 - CSS3
